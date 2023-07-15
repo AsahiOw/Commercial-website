@@ -1,0 +1,173 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Status - Apple</title>
+    <!-- Favicon -->
+    <link rel="icon" href="material/Icon/Apple-Logo_square.png" type="image/png">
+<body>
+    <center>
+        <!--==========Main Header Section==========-->
+        <header>
+
+            <a href="index.html">
+                <img src="material/Icon/Apple-Logo_square.png" width="300" alt="RMIT logo">
+            </a>
+        </header>
+        <!--==========Main Header Section==========-->
+
+        <!--==========Slider Section==========-->
+        <br>
+        <!--==========Slider Section==========-->
+
+        <!--==========Main Section==========-->
+        <center>
+            <main style="width: 500px;">
+                <section>
+
+                    <h2>Order Products Form</h2>
+
+                    <form action="form-processing" method="post" id="item-list">
+                        <fieldset>
+                            <legend>Enter your personal information</legend>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required=""><br><br>
+
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required=""><br><br>
+
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required=""><br><br>
+
+                            <label for="Apple ID">Apple ID</label>
+                            <input type="text" id="appleid" name="appleid" required=""><br><br>
+
+                            <label for="Email">Email address</label>
+                            <input type="text" id="email" name="email" required=""><br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Enter your shipping information</legend>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address"><br><br>
+
+                            <label for="district">District:</label>
+                            <select id="district" name="district">
+                                <option value="">Select a district</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <!-- Add more district options as needed -->
+                            </select><br><br>
+
+                            <label for="city">City:</label>
+                            <select id="city" name="city">
+                                <option value="">Select a city</option>
+                                <option value="HCMC">Ho Chi Minh City</option>
+                                <option value="HN">Hanoi</option>
+                                <option value="DN">Da Nang</option>
+                                <!-- Add more city options as needed -->
+                            </select><br><br>
+
+                            <label for="postcode">Postcode:</label>
+                            <input type="text" id="postcode" name="postcode"><br><br>
+                            <label for="phone-num">Phone:</label>
+                            <input type="tel" id="phone-num" name="phone-num" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required="">
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Purchase Options</legend>
+                            <label for="product-select">Select product(s):</label>
+                            <select id="product-select" name="product" multiple="">
+                                <option value="MacBook Air 13 M1">MacBook Air 13 M1</option>
+                                <option value="MacBook Air 13 and 15 M2">MacBook Air 13 and 15 M2</option>
+                                <option value="MacBook Pro 13">MacBook Pro 13</option>
+                                <option value="MacBook Pro 14 and 16">MacBook Pro 14 and 16</option>
+                                <option value="iMac 24">iMac 24</option>
+                                <option value="Mac mini">Mac mini</option>
+                                <option value="Mac Studio">Mac Studio</option>
+                                <option value="Studio Display">Studio Display</option>
+                                <option value="Mac Pro">Mac Pro</option>
+                                <option value="Pro Display XDR">Pro Display XDR</option>
+                                <option value="iPhone 14 Pro & iPhone 14 Pro Max">iPhone 14 Pro & iPhone 14 Pro Max</option>
+                                <option value="iPhone 14 & iPhone 14 Plus">iPhone 14 & iPhone 14 Plus</option>
+                                <option value="iPhone 13 mini & iPhone 13">iPhone 13 mini & iPhone 13</option>
+                                <option value="iPhone SE">iPhone SE</option>
+                                <option value="iPhone 12">iPhone 12</option>
+                                <option value="iPad Pro">iPad Pro</option>
+                                <option value="iPad Air">iPad Air</option>
+                                <option value="iPad (10th generation)">iPad (10th generation)</option>
+                                <option value="iPad (9th generation)">iPad (9th generation)</option>
+                                <option value="iPad mini">iPad mini</option>
+                                <option value="Apple Watch Ultra">Apple Watch Ultra</option>
+                                <option value="Apple Watch Series 8">Apple Watch Series 8</option>
+                                <option value="Apple Watch SE">Apple Watch SE</option>
+                                <option value="Apple Watch Hermès">Apple Watch Hermès</option>
+                                <option value="AirPods 2nd generation">AirPods 2nd generation</option>
+                                <option value="AirPods 3rd generation">AirPods 3rd generation</option>
+                                <option value="AirPods Pro 2nd generation">AirPods Pro 2nd generation</option>
+                                <option value="AirPods Max">AirPods Max</option>
+                                <option value="AirTag">AirTag</option>
+                                <option value="AirTag 4 pack">AirTag 4 pack</option>
+                                <option value="Apple TV 4K with Wi-Fi">Apple TV 4K with Wi-Fi</option>
+                                <option value="Apple TV 4K with Wi-Fi and Ethernet">Apple TV 4K with Wi-Fi and Ethernet</option>
+                                <option value="HomePod">HomePod</option>
+                                <option value="HomePod mini">HomePod mini</option>
+                                <option value="35W Dual USB-C Port Compact Power Adapter">35W Dual USB-C Port Compact Power Adapter</option>
+                                <option value="Magic Keyboard with Touch ID and Numeric Keypad">Magic Keyboard with Touch ID and Numeric Keypad</option>
+                                <option value="Magic Trackpad">Magic Trackpad</option>
+                                <option value="Magic Mouse">Magic Mouse</option>
+                                <option value="USB-C Digital AV Multiport Adapter">USB-C Digital AV Multiport Adapter</option>
+                                <option value="USB-C to USB Adapter">USB-C to USB Adapter</option>
+                                <option value="USB-C to MagSafe 3 Cable (2m) - Silver">USB-C to MagSafe 3 Cable (2m) - Silver</option>
+                                <option value="LaCie Mobile Drive Secure USB-C 2TB with Rescue">LaCie Mobile Drive Secure USB-C 2TB with Rescue</option>
+                                <option value="Twelve South Curve Stand for MacBook">Twelve South Curve Stand for MacBook</option>
+                                <option value="Tech21 Evo Hardshell case for MacBook Pro 14 2021">Tech21 Evo Hardshell case for MacBook Pro 14 2021</option>
+                                <option value="Belkin iPhone Mount with MagSafe for Mac Notebooks">Belkin iPhone Mount with MagSafe for Mac Notebooks</option>
+                                <option value="Belkin iPhone Mount with MagSafe for Mac destops and displays">Belkin iPhone Mount with MagSafe for Mac destops and displays</option>
+                                <option value="Apple Pencil (1st generation)">Apple Pencil (1st generation)</option>
+                                <option value="Magic Keyboard Folio for iPad (10th generation)">Magic Keyboard Folio for iPad (10th generation)</option>
+                                <option value="Smart Folio for iPad (10th generation) - Watermelon">Smart Folio for iPad (10th generation) - Watermelon</option>
+                                <option value="Magic Keyboard for iPad Pro 12.9-inch (6th generation) - Black">Magic Keyboard for iPad Pro 12.9-inch (6th generation) - Black</option>
+                                <option value="Apple Pencil (2nd generation)">Apple Pencil (2nd generation)</option>
+                                <option value="USB-C to Apple Pencil Adapter">USB-C to Apple Pencil Adapter</option>
+                                <option value="Apple Pencil Tips - 4 pack">Apple Pencil Tips - 4 pack</option>
+                                <option value="30W USB-C Power Adapter">30W USB-C Power Adapter</option>
+                                <option value="iPhone 14 Pro Leather Case with MagSafe - Ink">iPhone 14 Pro Leather Case with MagSafe - Ink</option>
+                                <option value="iPhone 14 Pro Silicone Case with MagSafe - Canary Yellow">iPhone 14 Pro Silicone Case with MagSafe - Canary Yellow</option>
+                                <option value="iPhone Leather Wallet with MagSafe">iPhone Leather Wallet with MagSafe</option>
+                                <option value="AirPods Pro (2nd generation)">AirPods Pro (2nd generation)</option>
+                                <option value="iPhone 14 Clear Case with MagSafe">iPhone 14 Clear Case with MagSafe</option>
+                                <option value="MagSafe Battery Pack">MagSafe Battery Pack</option>
+                                <option value="20w USB-C Power Adapter">20w USB-C Power Adapter</option>
+                                <option value="MagSafe Charger">MagSafe Charger</option>
+                                <option value="Solo Loop">Solo Loop</option>
+                                <option value="Sport Band">Sport Band</option>
+                                <option value="Braided Solo Loop">Braided Solo Loop</option>
+                                <option value="Sport Loop">Sport Loop</option>
+                                <option value="Milanese Loop">Milanese Loop</option>
+                                <option value="von Holzhausen The Watch Band Portfolio">von Holzhausen The Watch Band Portfolio</option>
+                                <option value="Belkin BOOST↑CHARGE™ PRO Portable Fast Charger for Apple Watch">Belkin BOOST↑CHARGE™ PRO Portable Fast Charger for Apple Watch</option>
+                                <option value="Belkin BOOST↑CHARGE™ PRO 3-in-1 Wireless Charging Pad with MagSafe">Belkin BOOST↑CHARGE™ PRO 3-in-1 Wireless Charging Pad with MagSafe</option>
+                            </select>
+                            <p><strong>Hint:</strong> Use Shift/Ctrl key to select multiple products!</p>
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Order Now!">
+                    </form>
+                </section>
+            </main>
+        </center>
+        <!--==========Main Section==========-->
+
+        <!--==========Footer Area==========-->
+        <footer>
+
+            <h4>© Copyright 2023 by Tuan Nguyen @ RMIT Vietnam</h4>
+
+        </footer>
+        <!--==========Footer Area==========-->
+    </center>
+
+
+</body></html>
